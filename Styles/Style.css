@@ -69,6 +69,7 @@ body {
 	justify-content: center;
 	width: 10%;
 	height: 100%;
+	flex-direction: row;
 	font-size: 20px;
 	writing-mode: vertical-rl;
 	/* background-color: beige; */
@@ -117,25 +118,24 @@ body {
 .Img-2 {
 	transition: 1s;
 	filter: brightness(0.3);
-	height: 90%;
+	height: 60%;
 	border-radius: 20px;
-	margin: auto 0px 20px 0px;
+	margin: 0px 0px 20px 0px;
 }
 .Imagen1 {
 	width: 50%;
 	height: 781px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	/* background-color: black; */
 }
 .Imagen2 {
 	width: 50%;
-	height: 781px;
+	height: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	flex-direction: column;
 	/* background-color: black; */
 }
 .Img-1:hover {

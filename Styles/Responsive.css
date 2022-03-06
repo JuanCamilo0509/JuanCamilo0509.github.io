@@ -1,5 +1,5 @@
 /* Móviles en vertical */
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 500px) {
 	* {
 		margin: 0px 0px 0px 0px;
 	}
@@ -8,15 +8,15 @@
 		background-color: white;
 	}
 	body::-webkit-scrollbar {
-		width: 10px;
+		width: 0px;
 	}
 	body::-webkit-scrollbar-thumb {
 		background-color: black;
-		border-radius: 6px;
-		border-right: 1px solid #ffff;
+		border-radius: 0px;
+		border-right: 0px;
 	}
 	.Encabezado {
-		font-size: 40px;
+		font-size: 23px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -31,78 +31,103 @@
 	.SubtituloPrincipal {
 		padding-top: 0px;
 		margin-top: 0px;
-		font-size: 26px;
+		font-size: 15px;
 	}
-
-	/* ------------------------------------------------------------------------------------------------------------- */
 
 	/* PrimerSector */
 	.PrimerSector {
 		display: block;
 		width: 100%;
-		font-size: 17px;
+		font-size: 15px;
 		margin: 0px 0px 0px 0px;
 		border-radius: 0px;
 		transition: 0s;
 		overflow: unset;
+		position: relative;
 	}
 	.PrimerSector:hover {
-		background-color: #fff;
+		background-color: unset;
 	}
 	.PrimerSector:hover .TercetoUno {
-		background-color: #fff;
+		background-color: unset;
 	}
 	.container_1 {
 		/* background-color: chocolate; */
 		display: block;
 		/* align-items: center; */
 	}
+	.Contenedor-imagen-terceto {
+		display: flex;
+		width: 100%;
+		background-color: black;
+	}
 	.TercetoUno {
-		display: block;
+		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100%;
-		height: 100%;
-		font-size: 20px;
-		writing-mode: unset;
+		width: 40%;
+		height: auto;
+		font-size: 11px;
+		writing-mode: vertical-lr;
 		/* background-color: beige; */
-		text-align: unset;
-		transition: 0s;
+		text-align: center;
+		transition: 4s;
 		margin: 0px 0px 0px 0px;
-		padding: 0px 0px 0px 0px;
+		padding: 10px 0px 10px 0px;
+		background-color: #e5e5e5;
+		opacity: 0%;
 	}
-	.Main-Uno {
+	.Imagen1:hover .TercetoUno {
+	  opacity: 100%;
+	}
+	.Img-1 {
+		transition: 1s;
+		filter: brightness(unset);
+		filter: opacity(20%);
+		height: auto;
+		width: 60%;
+		margin: 0px 0px 30px 10px;
+		border-radius: 0px 0px 20px 20px;
+		transition: 4s;
+	}
+	.Imagen1 {
+		display: flex;
 		/* background-color: aqua; */
 		width: 100%;
+		height: auto;
+		position: relative;
+		z-index: 1;
+		bottom: 280px;
+		right: 0px;
+		left: 0px;
+		transition: 3s;
+		border-radius: 0px 0px 20px 20px;
+	}
+	.Imagen1:hover {
+		position: relative;
+		bottom: 0px;
+		background-color: #e5e5e5;
+	}
+	.Img-1:hover {
+		filter: brightness(1);
+		filter: opacity(100%);
+	}
+	.Main-Uno {
+		width: 100%;
 		padding: 0px 0px 0px 0px;
 		margin: 0px 0px 0px 0px;
-		background-color: aqua;
+		background-color: white;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		text-align: center;
+		padding: 0px 0px 10px 0px;
 		border-radius: 50px 50px 0px 0px;
+		z-index: 100000000000000;
+		position: relative;
 	}
 	.SubTitle_Main-Uno {
-		margin: 0px 0px 0px 0px;
-	}
-	.Img-1 {
-		transition: 1s;
-		filter: brightness(1);
-		height: auto;
-		width: 100%;
-		border-radius: 0px;
-	}
-	.Img-1:hover {
-		filter: brightness(1);
-	}
-	.Imagen1 {
-		width: 50%;
-		height: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: black;
+		margin: 0px 0px 20px 0px;
 	}
 
 	/* SegundoSector */

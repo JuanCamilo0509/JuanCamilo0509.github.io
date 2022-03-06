@@ -1,5 +1,5 @@
 /* Móviles en vertical */
-@media (max-width: 600px) {
+@media (max-width: 370px) {
 	* {
 		margin: 0px 0px 0px 0px;
 	}

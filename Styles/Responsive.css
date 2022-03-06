@@ -52,7 +52,8 @@
 	.Img-2:hover {
 		filter: brightness(1);
 		filter: opacity(100%);
-	}.Img-1:hover {
+	}
+	.Img-1:hover {
 		filter: brightness(1);
 		filter: opacity(100%);
 	}
@@ -69,14 +70,6 @@
 		top: -320px;
 		background-color: #e5e5e5;
 	}
-
-
-
-
-
-
-
-
 
 	.SegundoSector {
 		display: block;
@@ -177,6 +170,11 @@
 		left: 0px;
 		transition: 4s;
 		border-radius: 0px 0px 20px 20px;
+	}
+	.SpotifyCode {
+	  justify-content: center;
+	  height: 100%;
+	  width: 100%;
 	}
 	.Imagen2 {
 		display: flex;

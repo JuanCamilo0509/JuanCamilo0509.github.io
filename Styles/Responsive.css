@@ -1,0 +1,184 @@
+/* Móviles en vertical */
+@media (max-width: 600px) {
+* {
+	margin: 0px 0px 0px 0px;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: white;
+}
+body::-webkit-scrollbar {
+	width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: black;
+	border-radius: 6px;
+	border-right: 1px solid #ffff;
+}
+.Encabezado {
+	font-size: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Roboto Slab", serif;
+	text-align: center;
+	height: 300px;
+}
+.Titulo_Encabezado {
+	margin-bottom: 0px;
+}
+.SubtituloPrincipal {
+	padding-top: 0px;
+	margin-top: 0px;
+	font-size: 26px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* PrimerSector */
+.PrimerSector {
+	display: block;
+	width: 100%;
+	font-size: 17px;
+	margin: 0px 0px 0px 0px;
+	border-radius: 0px;
+	transition: 0s;
+	overflow: unset;
+}
+.PrimerSector:hover {
+	background-color: #fff;
+}
+.PrimerSector:hover .TercetoUno {
+	background-color: #fff;
+}
+.container_1 {
+	/* background-color: chocolate; */
+	display: block;
+	/* align-items: center; */
+}
+.TercetoUno {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	writing-mode: unset;
+	/* background-color: beige; */
+	text-align: unset;
+	transition: 0s;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+.Main-Uno {
+	/* background-color: aqua; */
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	background-color: aqua;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border-radius: 50px 50px 0px 0px;
+}
+.SubTitle_Main-Uno {
+	margin: 0px 0px 0px 0px;
+}
+.Img-1 {
+	transition: 1s;
+	filter: brightness(1);
+  height: auto;
+  width: 100%;
+	border-radius: 0px;
+}
+.Img-1:hover {
+	filter: brightness(1);
+}
+.Imagen1 {
+	width: 50%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+
+/* SegundoSector */
+.SegundoSector {
+	display: block;
+	font-size: 22px;
+	margin: 0px 0px 0px 0px;
+	border-radius: 0px;
+	transition: 0s;
+	overflow: unset;
+}
+.SegundoSector:hover {
+	background-color: #fff;
+}
+.SegundoSector:hover .TercetoDos {
+	background-color: #fff;
+}
+.TercetoDos {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	writing-mode: unset;
+	/* background-color: beige; */
+	text-align: unset;
+	transition: 0s;
+	margin: 0px 0px 0px 0px;
+}
+.container_2 {
+	/* background-color: chocolate; */
+	display: block;
+	/* align-items: center; */
+}
+.Main-Dos {
+	/* background-color: aqua; */
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+
+.SubTitle_Main-Dos {
+	margin: 0px 0px 50px 0px;
+}
+
+/* Imagenes */
+.Img-2 {
+	transition: 1s;
+	filter: brightness(1);
+	width: 100%;
+	height: auto;
+	border-radius: 0px;
+	margin: auto 0px 20px 0px;
+}
+.Imagen2 {
+	width: 100%;
+	height: auto;
+	display: block;
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* flex-direction: column; */
+	/* background-color: black; */
+}
+.Img-2:hover {
+	filter: brightness(1);
+}
+
+/* Móviles en horizontal o tablets en vertical */
+@media (min-width: 768px) {
+}
+
+/* Tablets en horizonal y escritorios normales */
+@media (min-width: 1024px) {
+}
+
+/* Escritorios muy anchos */
+@media (min-width: 1200px) {
+}

@@ -62,7 +62,7 @@
 	}
 	.SegundoSector:hover .TercetoDos {
 		background-color: unset;
-		opacity: 0%;
+
 	}
 	.Imagen2:hover {
 		filter: brightness(1);

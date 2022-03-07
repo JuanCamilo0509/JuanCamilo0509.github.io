@@ -70,7 +70,9 @@
 		top: -320px;
 		background-color: #e5e5e5;
 	}
-
+        .Imagen2:hover .TercetoDos{ opacity: 100%;
+	
+	}
 	.SegundoSector {
 		display: block;
 		width: 100%;

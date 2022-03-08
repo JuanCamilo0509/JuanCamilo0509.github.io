@@ -19,6 +19,10 @@ body {
 	text-align: center;
 	height: 300px;
 }
+.SpotifyCode {
+  display: flex;
+  justify-content: center;
+}
 .Spotify{
 	display: flex;
 	justify-content: center;

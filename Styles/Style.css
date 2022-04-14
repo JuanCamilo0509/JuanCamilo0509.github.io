@@ -1,171 +1,215 @@
+:root {
+	--fondo:#F7F7F7;
+	--principal:#79AF95;
+	--secundario:#79AEAF;
+	--principal-claro:#9FCFB3;
+	--complementario:#AF7993;
+	--morado: #7A79AF;
+	--cafe:#AF9579;
+	--number1: 4deg;
+	--number2: -4deg;
+	--height: 200vh;
+}
 * {
-	margin: 0px 0px 0px 0px;
+	padding: 0;
+	margin: 0;
 }
 body {
-	font-family: "Roboto", sans-serif;
-	background-color: white;
+	height: var(--height);
+	font-family: "Montserrat";
+	font-size: 16px;
+	background-color: var(--fondo);
+	/*color: white;*/
 }
-.container_Encabezado {
+body::-webkit-scrollbar {
+	width: 6px;
+}
+body::-webkit-scrollbar-thumb {
+	/*background-color: white;*/
+	width: 5px;
+	border-radius: 5px;
+	background-color: var(--secundario);
+}
+.header {
+	position: sticky;
+	top: 0px;
+	/*background-color: red;*/
+}
+.head {
+	background-color: var(--fondo);
+	width: 100%;
+	height: 20vh;
+	font-family: "Montserrat";
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--principal);
+}
+.spotify {
+	margin-right: 3%;
+}
+.ImgSp {
+ width: 100px;
+ height: 100px;
+}
+.oscuro-claro {
+	/*display: flex;*/
+	display: none;
+	justify-content: end;
+	width: 80%;
+	background-color: #000;
+}
+.svg {
+	transition: linear 5s;
+	animation-name: lampara;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+@keyframes lampara {
+	0% {
+		transform: rotate(var(--number1));
+	}
+	50% {
+		transform: rotate(var(--number2));
+	}
+	100% {
+		transform: rotate(var(--number1));
+	}
+}
+.tituloPrincipal {
+	text-decoration: none;
+	color: var(--principal);
+	cursor: text;
+}
+.subtituloPrincipal {
+	font-size: 30px;
+	color: var(--complementario);
+}
+.Contenedor_main {
+	/*background-color: green;*/
+	width: 100%;
+	height: var(--height);
+	display: flex;
+}
+.sideBar {
+	width: 5%;
+	height: 100%;
+	/*background-color: aqua;*/
+	display: none;
+}
+.Iconos {
+	width: 100%;
+	height: 50%;
+	padding: 1%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: space-between;
 }
-.Encabezado {
-	font-size: 40px;
+.icono_casa {
+	width: 40%;
+	cursor: pointer;
+}
+.main {
+	width: 100%;
+	height: 100%;
+	/*background-color: #000;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.apartado1 {
+	width: 90%;
+	height: 70vh;
+	/*background-color: violet;*/
+	display: flex;
+	border-radius: 20px;
+	transition: ease 1s;
+	margin: 5vh 0 25vh 0;
+	/*display: none;*/
+}
+.apartado1:hover {
+	box-shadow: 0px 0px 30px 0px var(--secundario);
+}
+.apartado1:hover .subTitle {
+	color: var(--secundario);
+}
+.apartado2 {
+	width: 90%;
+	height: 70vh;
+	/*background-color: violet;*/
+	display: flex;
+	border-radius: 20px;
+	transition: ease 1s;
+	margin: 25vh 0 0vh 0;
+}
+.apartado2:hover {
+	box-shadow: 0px 0px 30px 0px var(--morado);
+}
+.apartado2:hover .subTitle {
+	color: var(--morado);
+}
+.Izquierda {
+	width: 55%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px 0px 0px 20px;
+	transition: 1s ease;
+}
+.Img1 {
+	/*background-color: green;*/
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: ease 1s;
+	border-radius: 20px 0px 0px 0px;
+	object-fit: fill;
+}
+.imagen1 {
+	/*horizontal-Images*/
+	/*width: 80%;*/
+	/*Vertical-Image*/
+	height: 80%;
+	border-radius: 50px;
+	transition: ease 1s;
+}
+.Poema {
+	height: 100%;
+	width: 45%;
+	/*background-color: green;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: "Roboto Slab", serif;
+	transition: ease 1s;
+	border-radius: 0px 20px 20px 0px;
+	transition: 1s ease;
+}
+.subTitle {
+	/*background-color: green;*/
 	text-align: center;
-	height: 300px;
-}
-.SpotifyCode {
-  display: flex;
-  justify-content: center;
-}
-.Spotify{
-	display: flex;
-	justify-content: center;
-	margin: 30px 0px 0px 0px;
-	width: 100%; 
-	height: 100%;
-}
-.Titulo_Encabezado {
-	margin-bottom: 0px;
-	width: 70%;
-}
-.SubtituloPrincipal {
-	padding-top: 0px;
-	margin-top: 0px;
-	font-size: 26px;
-}
-.PrimerSector {
-	display: flex;
-	font-size: 22px;
-	margin: 0px 100px 100px 100px;
-	border-radius: 50px;
-	transition: 1s;
-	overflow: hidden;
-}
-.PrimerSector:hover {
-	background-color: #e5e5e5;
-}
-.PrimerSector:hover .TercetoUno {
-	background-color: #b7b7b7;
-}
-.SegundoSector {
-	display: flex;
-	font-size: 22px;
-	margin: 0px 100px 26px 100px;
-	border-radius: 50px;
-	transition: 1s;
-	overflow: hidden;
-}
-.SegundoSector:hover {
-	background-color: #e5e5e5;
-}
-.SegundoSector:hover .TercetoDos {
-	background-color: #b7b7b7;
-}
-.TercetoUno {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 10%;
-	height: 100%;
+	margin: 10% 0 10% 0;
 	font-size: 20px;
-	writing-mode: vertical-rl;
-	/* background-color: beige; */
+	transition: 2s ease;
+	color: var(--complementario);
+}
+.textoPoema {
 	text-align: center;
-	transition: 1s;
+	/*background-color: green;*/
+	padding: 0% 10% 0% 10%;
+	overflow: auto;
 }
-.TercetoDos {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 10%;
-	height: 100%;
-	flex-direction: row;
-	font-size: 20px;
-	writing-mode: vertical-rl;
-	/* background-color: beige; */
-	text-align: center;
-	transition: 1s;
+.textoPoema::-webkit-scrollbar {
+	width: 3px;
 }
-.ParrafoExtra {
-	padding: 0px 0px 0px 50px;
-}
-.container_1 {
-	/* background-color: chocolate; */
-	display: flex;
-	align-items: center;
-}
-.container_2 {
-	/* background-color: chocolate; */
-	display: flex;
-	align-items: center;
-}
-.Main-Uno {
-	/* background-color: aqua; */
-	width: 40%;
-	padding: 100px 100px 100px 100px;
-	margin: 0px 0px 0px 0px;
-}
-.Main-Dos {
-	/* background-color: aqua; */
-	width: 40%;
-	padding: 100px 100px 100px 100px;
-	margin: 0px 0px 0px 0px;
-}
-.SubTitle_Main-Uno {
-	margin: 0px 0px 50px 0px;
-}
-.SubTitle_Main-Dos {
-	margin: 0px 0px 50px 0px;
-}
-
-/* Imagenes */
-.Img-1 {
-	transition: 1s;
-	filter: brightness(0.3);
-	height: 90%;
-	border-radius: 20px;
-}
-.Img-2 {
-	transition: 1s;
-	filter: brightness(0.3);
-	height: 60%;
-	border-radius: 20px;
-	margin: 0px 0px 20px 0px;
-}
-.Imagen1 {
-	width: 50%;
-	height: 781px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	/* background-color: black; */
-}
-.Imagen2 {
-	width: 50%;
-	height: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	/* background-color: black; */
-}
-.Img-1:hover {
-	filter: brightness(1);
-}
-.Img-2:hover {
-	filter: brightness(1);
-}
-
-body::-webkit-scrollbar {
-	width: 10px;
-}
-body::-webkit-scrollbar-thumb {
-	background-color: black;
+.textoPoema::-webkit-scrollbar-thumb {
+	/*background-color: white;*/
+	width: 5px;
 	border-radius: 10px;
-	border-right: 4px solid #ffff;
+	background-color: var(--complementario);
 }
+

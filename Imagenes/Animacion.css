@@ -1,33 +1,21 @@
-:root {
-	--number1: 4deg;
-	--number2: -4deg;
+body {
+	width: 100%; 
 }
-.head {
-	width: 100%;
-	height: 20vh;
-	display: flex;
-	flex-direction: column;
-}
-.oscuro-claro {
-	display: flex;
-	justify-content: end;
-	width: 80%;
-}
-.svg {
-	transition: linear 5s;
-	animation-name: lampara;
-	animation-duration: 4s;
+.caja {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	transition: ease 5s;
+	position: relative;
+	animation-name: prueba;
+	animation-duration: 2s;
 	animation-iteration-count: infinite;
-	animation-timing-function: ease;
 }
-@keyframes lampara {
+@keyframes prueba {
 	0% {
-		transform: rotate(var(--number1));
-	}
-	50% {
-		transform: rotate(var(--number2));
+		transform: translateX(0);
 	}
 	100% {
-		transform: rotate(var(--number1));
+		transform:translateX(100%)
 	}
 }

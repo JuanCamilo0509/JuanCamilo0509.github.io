@@ -77,6 +77,9 @@ body::-webkit-scrollbar-thumb {
 		transform: rotate(var(--number1));
 	}
 }
+.titulos {
+	text-align: center;
+}
 .tituloPrincipal {
 	text-decoration: none;
 	color: var(--principal);
@@ -176,6 +179,7 @@ body::-webkit-scrollbar-thumb {
 	height: 80%;
 	border-radius: 50px;
 	transition: ease 1s;
+	background-color: green;
 }
 .Poema {
 	height: 100%;
@@ -213,3 +217,37 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--complementario);
 }
 
+@media (max-width: 1888px) {
+	.apartado1{
+		/*background-color: red;*/
+		flex-direction: column;
+		margin: 3vh 0 3vh 0;
+		height: 60vh;
+	}
+	.apartado2{
+		/*background-color: red;*/
+		flex-direction: column;
+		margin: 3vh 0 3vh 0;
+		height: 60vh;
+	}
+	.Poema {
+		width: 100%;
+		height: 40%;
+		justify-content: start;
+	}
+	.Izquierda {
+	width: 100%;
+	height: 60%;
+	}
+	.Img1 {
+		/*background-color: green;*/
+		width: 100%;
+	}
+	.imagen1 {
+
+		height: 90%;
+	}
+	.subTitle {
+	margin: 4% 0 4% 0;
+	}
+}

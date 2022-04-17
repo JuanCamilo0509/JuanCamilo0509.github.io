@@ -199,50 +199,6 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--complementario);
 }
 
-@media (max-width: 800px) {
-	.tituloPrincipal {
-		font-size: 15px;
-	}
-	.subtituloPrincipal {
-		font-size: 14px;
-	}
-	.apartado1 {
-		/*background-color: red;*/
-		flex-direction: column;
-		margin: 3vh 0 3vh 0;
-	}
-	.apartado2 {
-		/*background-color: red;*/
-		flex-direction: column;
-	}
-	.Poema {
-		width: 100%;
-		height: 40%;
-		justify-content: start;
-	}
-	.Izquierda {
-		width: 100%;
-		height: 60%;
-	}
-	.Img1 {
-		/*background-color: green;*/
-		width: 100%;
-	}
-	.imagen1 {
-		height: 90%;
-	}
-	.subTitle {
-		font-size: 13px;
-		margin: 4% 0 4% 0;
-	}
-	.ImgSp {
-		height: 50px;
-		width: 50px;
-	}
-	.spotify {
-		margin-right: 2%;
-	}
-}
 .Fondo {
 	background-color: black;
 	color: white;
@@ -309,5 +265,52 @@ body::-webkit-scrollbar-thumb {
 	}
 	100% {
 		transform: translateY(-5%);
+	}
+}
+@media (max-width: 800px) {
+	.tituloPrincipal {
+		font-size: 15px;
+	}
+	.subtituloPrincipal {
+		font-size: 14px;
+	}
+	.apartado1 {
+		/*background-color: red;*/
+		flex-direction: column;
+		margin: 3vh 0 3vh 0;
+	}
+	.apartado2 {
+		/*background-color: red;*/
+		flex-direction: column;
+	}
+	.Poema {
+		width: 100%;
+		height: 40%;
+		justify-content: start;
+	}
+	.Izquierda {
+		width: 100%;
+		height: 60%;
+	}
+	.Img1 {
+		/*background-color: green;*/
+		width: 100%;
+	}
+	.imagen1 {
+		height: 90%;
+	}
+	.subTitle {
+		font-size: 13px;
+		margin: 4% 0 4% 0;
+	}
+	.ImgSp {
+		height: 50px;
+		width: 50px;
+	}
+	.spotify {
+		margin-right: 2%;
+	}
+	.container {
+		display: none;
 	}
 }

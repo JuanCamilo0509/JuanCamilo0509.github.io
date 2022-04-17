@@ -1,11 +1,11 @@
 :root {
-	--fondo:#F7F7F7;
-	--principal:#79AF95;
-	--secundario:#79AEAF;
-	--principal-claro:#9FCFB3;
-	--complementario:#AF7993;
-	--morado: #7A79AF;
-	--cafe:#AF9579;
+	--fondo: #f7f7f7;
+	--principal: #79af95;
+	--secundario: #79aeaf;
+	--principal-claro: #9fcfb3;
+	--complementario: #af7993;
+	--morado: #7a79af;
+	--cafe: #af9579;
 	--number1: 4deg;
 	--number2: -4deg;
 	--height: 200vh;
@@ -31,14 +31,19 @@ body::-webkit-scrollbar-thumb {
 	background-color: var(--secundario);
 }
 .header {
-	position: sticky;
-	top: 0px;
-	/*background-color: red;*/
-}
-.head {
-	background-color: var(--fondo);
 	width: 100%;
 	height: 20vh;
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--fondo);
+	z-index: 10000;
+}
+.head {
+	width: 90%;
+	height: 100%;
 	font-family: "Montserrat";
 	display: flex;
 	justify-content: center;
@@ -46,36 +51,12 @@ body::-webkit-scrollbar-thumb {
 	color: var(--principal);
 }
 .spotify {
-	margin-right: 10px;
+	margin-right: 5%;
 }
 .ImgSp {
- width: 100px;
- height: 100px;
-}
-.oscuro-claro {
-	/*display: flex;*/
-	display: none;
-	justify-content: end;
-	width: 80%;
-	background-color: #000;
-}
-.svg {
-	transition: linear 5s;
-	animation-name: lampara;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease;
-}
-@keyframes lampara {
-	0% {
-		transform: rotate(var(--number1));
-	}
-	50% {
-		transform: rotate(var(--number2));
-	}
-	100% {
-		transform: rotate(var(--number1));
-	}
+	width: 100px;
+	height: 100px;
+	/*background-color: green;*/
 }
 .titulos {
 	text-align: center;
@@ -126,7 +107,6 @@ body::-webkit-scrollbar-thumb {
 .apartado1 {
 	width: 90%;
 	height: 70vh;
-	/*background-color: violet;*/
 	display: flex;
 	border-radius: 20px;
 	transition: ease 1s;
@@ -171,16 +151,17 @@ body::-webkit-scrollbar-thumb {
 	align-items: center;
 	transition: ease 1s;
 	border-radius: 20px 0px 0px 0px;
-	object-fit: fill;
 }
 .imagen1 {
 	/*horizontal-Images*/
 	/*width: 80%;*/
 	/*Vertical-Image*/
-	height: 80%;
+	width: 80%;
 	border-radius: 50px;
+	object-fit: cover;
 	transition: ease 1s;
 	background-color: green;
+	opacity: 0.7;
 }
 .Poema {
 	height: 100%;
@@ -225,12 +206,12 @@ body::-webkit-scrollbar-thumb {
 	.subtituloPrincipal {
 		font-size: 14px;
 	}
-	.apartado1{
+	.apartado1 {
 		/*background-color: red;*/
 		flex-direction: column;
 		margin: 3vh 0 3vh 0;
 	}
-	.apartado2{
+	.apartado2 {
 		/*background-color: red;*/
 		flex-direction: column;
 	}
@@ -240,22 +221,93 @@ body::-webkit-scrollbar-thumb {
 		justify-content: start;
 	}
 	.Izquierda {
-	width: 100%;
-	height: 60%;
+		width: 100%;
+		height: 60%;
 	}
 	.Img1 {
 		/*background-color: green;*/
 		width: 100%;
 	}
 	.imagen1 {
-
 		height: 90%;
 	}
 	.subTitle {
-	margin: 4% 0 4% 0;
+		font-size: 13px;
+		margin: 4% 0 4% 0;
 	}
 	.ImgSp {
 		height: 50px;
 		width: 50px;
+	}
+	.spotify {
+		margin-right: 2%;
+	}
+}
+.Fondo {
+	background-color: black;
+	color: white;
+}
+.container {
+	width: 200px;
+	height: 100px;
+	/*background-color: aqua;*/
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.caja1 {
+	width: 90px;
+	/*background-color: gray;*/
+	animation: sol 4s infinite linear;
+	position: absolute;
+	transition: 1s ease;
+	bottom: 10px;
+	left: 10px;
+}
+@keyframes sol {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.caja2 {
+	width: 100px;
+	/*background-color: green;	;*/
+	transition: 1s ease;
+	position: absolute;
+	bottom: 0;
+	right: 50px;
+	z-index: 9;
+	cursor: pointer;
+}
+.caja3 {
+	width: 60px;
+	/*background-color: gray;*/
+	position: absolute;
+	transition: 1s ease;
+	bottom: 20px;
+	right: 30px;
+	animation: moon 2s infinite linear alternate;
+	filter: drop-shadow(0 0 10px white);
+}
+.active1 {
+	bottom: -10px;
+	left: 40px;
+	height: 0px;
+}
+.active2 {
+	bottom: 10px;
+	right: 40px;
+	height: 0px;
+}
+@keyframes moon {
+	0% {
+	}
+	100% {
+		transform: translateY(-5%);
 	}
 }

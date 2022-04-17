@@ -1,21 +1,83 @@
+
+:root {
+	--number: -20px;
+	--nubeDia: #63C0F5;
+	--nubeNoche: #-_-;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
 body {
-	width: 100%; 
+	background-color: #f7f7f7;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.caja {
-	width: 100px;
+.Fondo {
+	background-color: black;
+}
+.container {
+	width: 200px;
 	height: 100px;
-	background-color: blue;
-	transition: ease 5s;
+	background-color: aqua;
 	position: relative;
-	animation-name: prueba;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
-@keyframes prueba {
+.caja1 {
+	width: 90px;
+	/*background-color: gray;*/
+	animation: sol 2s infinite linear;
+	position: absolute;
+	transition: 1s ease;
+	bottom: 8px;
+	left: 15px;
+}
+@keyframes sol {
 	0% {
-		transform: translateX(0);
+		transform: rotate(0deg);
 	}
 	100% {
-		transform:translateX(100%)
+		transform: rotate(360deg);
+	}
+}
+.caja2 {
+	width: 100px;
+	/*background-color: green;	;*/
+	transition: 1s ease;
+	z-index: 9;
+	cursor: pointer;
+}
+.caja3 {
+	width: 60px;
+	/*background-color: gray;*/
+	position: absolute;
+	transition: 1s ease;
+	bottom: 20px;
+	right: 30px;
+	animation: moon 2s infinite linear alternate;
+	filter: drop-shadow(0 0 10px white);
+}
+.active1 {
+	transition: 1s ease;
+	bottom: -10px;
+	left: 40px;
+	height: 0px;
+}
+.active2 {
+	bottom: 10px;
+	right: 40px;
+	height: 0px;
+}
+@keyframes moon {
+	0% {
+
+	}
+	100%{
+		transform: translateY(-5%);
 	}
 }

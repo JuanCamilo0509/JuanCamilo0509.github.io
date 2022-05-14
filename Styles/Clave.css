@@ -81,6 +81,7 @@
 .Confirmar {
 	background-color: var(--complementario);
 	border-radius: 50px;
+	width: 30%;
 	padding: 20px;
 	transition: 1s ease;
 	font-size: 20px;

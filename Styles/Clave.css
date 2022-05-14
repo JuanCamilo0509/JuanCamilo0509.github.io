@@ -1,0 +1,94 @@
+:root {
+	--fondo: #f7f7f7;
+	--principal: #79af95;
+	--secundario: #79aeaf;
+	--principal-claro: #9fcfb3;
+	--complementario: #af7993;
+	--morado: #7a79af;
+	--cafe: #af9579;
+	--number1: 4deg;
+	--number2: -4deg;
+	--height: 200vh;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+.Body {
+	width: 100%;
+	height: 100vh;
+	background-color: var(--fondo);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Montserrat";
+}
+.Miformulario {
+	width: 80%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+}
+.Titulo {
+	display: flex;
+	align-items: center;
+	font-size: 6rem;
+	color: var(--principal);
+	width: 100%;
+	height: 30%;
+	text-align: center;
+}
+.NombreClave {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.User, .Password {
+	background-color: transparent;
+	border-radius: 50px;
+	width: 80%;
+	margin: 10%;
+	padding: 2%;
+	font-size: 1.5rem;
+	color: black;
+	border: 4px solid var(--secundario);
+	outline: none;
+	text-align: center;
+	transition: 2s ease;
+}
+.User:focus {
+	box-shadow: 0px 3px 1px var(--secundario);
+}
+.Password:focus {
+	box-shadow: 0px 3px 1px var(--secundario);
+}
+.ConfirmarPadre {
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Confirmar {
+	background-color: var(--complementario);
+	border-radius: 50px;
+	width: 30%;
+	padding: 20px;
+	transition: 1s ease;
+	font-size: 20px;
+	color: white;
+	border: 4px solid var(--complementario);
+	cursor: pointer;
+	opacity: 0.9;
+}
+.Confirmar:focus {
+	border: solid 4px white;
+}
+.Confirmar:hover {
+	opacity: 1;
+}

@@ -1,10 +1,27 @@
-let fondo = document.querySelector('body')
-let container = document.querySelector(".container");
-let caja1 = document.querySelector(".caja1");
-let caj2 = document.querySelector(".caja2");
-let caja3 = document.querySelector(".caja3");
-container.addEventListener("click", function () {
-	caja1.classList.toggle("active1");
-	caja3.classList.toggle("active2")
-	fondo.classList.toggle('Fondo');
-});
+let cuerpo = document.querySelector('body')
+//(function idk() {
+	//let actualizarHora = function () {
+		//let fecha2 = new Date(11/3/2021)
+		//console.log(fecha2)
+		//let fecha = new Date(),
+			//days = fecha.getDay(),
+			//meses = fecha.getMonth(),
+			//year = fecha.getFullYear();
+		let pdays = document.querySelector(".days");
+		//let pmonths = document.querySelector(".month");
+		//let pyear = document.querySelector(".year");
+		//pdays.textContent = days;
+		//pyear.textContent = (2021-year);
+	//};
+	//actualizarHora();
+//})();
+
+//mes/dia/año
+let fecha = new Date();
+let aniversario = fecha.getDate();
+if (aniversario == 14){
+	cuerpo.style.background = "#000000"
+} else {
+	cuerpo.style.background = "#f7f7f7"
+}
+pdays.textContent = aniversario

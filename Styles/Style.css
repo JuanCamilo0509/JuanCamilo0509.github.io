@@ -15,10 +15,12 @@
 	margin: 0;
 }
 body {
+	width: 100vw;
 	height: var(--height);
 	font-family: "Montserrat";
 	background-color: var(--fondo);
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 body::-webkit-scrollbar {
 	width: 6px;

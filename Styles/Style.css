@@ -305,7 +305,7 @@ p {
 	object-fit: cover;
 	transition: ease 1s;
 	background-color: green;
-	opacity: 0.7;
+	/*opacity: 0.7;*/
 }
 .Poema {
 	height: 100%;

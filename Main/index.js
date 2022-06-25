@@ -21,7 +21,7 @@ const Sol = document.querySelector(".Sol");
 //contador
 
 //Se define la fecha
-let fecha = new Date("May 14 2022");
+let fecha = new Date();
 let date = fecha.getDate();
 let year = fecha.getFullYear()-2022;
 // Si el numero es menor a la fecha estimada se resta uno, sino, se mantiene la fecha con los meses

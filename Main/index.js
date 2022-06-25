@@ -1,3 +1,4 @@
+//objetos del document
 const body = document.querySelector("body");
 const contenedorCarga = document.querySelector(".Contenedor_carga");
 const boxAirplane = document.querySelector(".boxAirplane");
@@ -16,30 +17,54 @@ const Img2 = document.querySelector(".imagen2");
 const solLuna = document.querySelector(".solLuna");
 const Luna = document.querySelector(".Luna");
 const Sol = document.querySelector(".Sol");
-let fecha2 = new Date("10/14/2021");
-let fecha = new Date();
+
+//contador
+
+//Se define la fecha
+let fecha = new Date("May 14 2022");
 let date = fecha.getDate();
-let month1 = Math.floor((fecha - fecha2) / (1000 * 60 * 60 * 24 * 7 * 4));
-let year = Math.floor((fecha - fecha2) / (1000 * 60 * 60 * 24 * 7 * 4 * 12));
-if (date == 14) {
+let year = fecha.getFullYear()-2022;
+// Si el numero es menor a la fecha estimada se resta uno, sino, se mantiene la fecha con los meses
+if (fecha.getDate() < 14) {
+	cantidad = fecha.getMonth() + 2;
+} else if (fecha.getDate() >= 14) {
+	cantidad = fecha.getMonth() + 3;
 }
-if (year == 0) {
-	container_year.style.display = "none";
-	dosPuntos.style.display = "none";
-}
-if (year == 1) {
-	var month = month1 - 12;
-	titulo_year.textContent = "AÑO";
-	titulo_month.textContent = "MES";
-	container_year.style.display = "initial";
-	dosPuntos.style.display = "initial";
-} else if (year == 2) {
-	var month = month1 - 24;
-} else {
-	var month = month1;
-}
-numero_month.textContent = month;
-numero_year.textContent = year;
+
+
+
+
+
+if (cantidad == 12){ 
+	numero_month.innerHTML = 1 + " AÑO";	
+} else if (cantidad < 12 & year == 0) {
+	numero_month.innerHTML = cantidad + " MESES";	
+}else if (cantidad < 12 & year > 0){
+	numero_month.innerHTML = year + " AÑOS Y " + cantidad + " MESES";	
+} else if (cantidad > 12 ) {
+	cantidad = cantidad;
+	numero_month.innerHTML = year + " AÑO ";	
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 container.addEventListener("click", function () {
 	if (
@@ -83,8 +108,8 @@ solLuna.addEventListener("click", function () {
 		boxAirplane.classList.remove("boxAirplane");
 		boxAirplane.classList.add("boxAirplane2");
 		body.style.color = "white";
-		Luna.style.display = "flex"
-		Sol.style.display = "none"
+		Luna.style.display = "flex";
+		Sol.style.display = "none";
 	} else {
 		document.documentElement.style.setProperty(
 			"--fondo",
@@ -93,12 +118,12 @@ solLuna.addEventListener("click", function () {
 		boxAirplane.classList.add("boxAirplane");
 		boxAirplane.classList.remove("boxAirplane2");
 		body.style.color = "black";
-		Luna.style.display = "none"
-		Sol.style.display = "flex"
+		Luna.style.display = "none";
+		Sol.style.display = "flex";
 	}
 });
 
-
+//bloqueo del scroll
 window.onscroll = function () {
 	//console.log("Vertical: " + window.scrollY);
 	//console.log("Horizontal: " + window.scrollX);
